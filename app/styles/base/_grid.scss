@@ -1,0 +1,113 @@
+// Контейнес с сеткой
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+// Ячейка сетки
+.grid-cell {
+	flex: 1;
+}
+
+// https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/grid.css
+
+// Флексивные ячейки
+.grid--flexCells > .grid-cell {
+	display: flex;
+}
+
+// Align per row
+.grid--top {
+	align-items: flex-start;
+}
+
+.grid--bottom {
+	align-items: flex-end;
+}
+
+.grid--center {
+	align-items: center;
+}
+
+.grid--justifyCenter {
+	justify-content: center;
+}
+
+// Align per cell 
+.grid-cell--top {
+	align-self: flex-start;
+}
+
+.grid-cell--bottom {
+	align-self: flex-end;
+}
+
+.grid-cell--center {
+	align-self: center;
+}
+
+.grid-cell--auto {
+	flex: none;
+}
+
+// Ширины колонок
+.grid--fit > .grid-cell {
+	flex: 1;
+}
+
+.grid--full > .grid-cell {
+	flex: 0 0 100%;
+}
+
+.grid--1of2 > .grid-cell {
+	flex: 0 0 50%;
+}
+
+.grid--1of3 > .grid-cell {
+	flex: 0 0 33.3333%;
+}
+
+.grid--1of4 > .grid-cell {
+	flex: 0 0 25%;
+}
+
+// Межколоночное растояние
+.grid--gutters {
+  margin: -1em 0 1em -1em;
+}
+.grid--gutters > .grid-cell {
+  padding: 1em 0 0 1em;
+}
+
+//TODO: Наисать медиа стили для адоптации сетки
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

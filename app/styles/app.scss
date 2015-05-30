@@ -1,41 +1,213 @@
-/*------- Basic config -------*/
-// font settings
-$base-fz: 16px;
-$base-lh: 21px;
+// ==================================================
+// Default settings
+// ==================================================
+// цвета
+$black: 							#2b2f33;
+$white: 							#ffffff;
 
-// fonts
-$base-ff: "Avenir Next";
+$base-text-color: 			$black;
+$base-text-second-color: 	#252323;
+$brand-color: 					#e0215c;
 
-// colors
+// отступы
+$base-spacing: 				12px;
+
+// скругление
+$base-radius: 					2px;
+
+// бордеры
+$base-border: 					1px solid $white;
+
+// транзиты
+$base-transition: 			all 0.2s ease-out;
+
+.debug {
+	background: tomato;
+}
+
+// ==================================================
+// Imports
+// ==================================================
+@import 						"base/grid";
+@import 						"base/icons";
+@import 						"base/typography";
+@import 						"components/buttons";
+@import 						"utils/helpers";
+@import 						"layout/forms";
+
+// ==================================================
+// Functions
+// ==================================================
+// Перевести .px в .em
+// Прим scss: .foo { widht: em(16px); } 
+@function em($px, $base: $base-fz) {
+  @if unitless($px) {
+    @warn '#{$px} должно быть в пикселях, попробуем явно преобрзовать.';
+    @return em($px + 0px);
+  } @else if unit($px) == em {
+    @return $px;
+  }
+
+  @return ($px / $base) * 1em;
+};
+
+@import "base/typography";
+
+// ==================================================
+// Base
+// ==================================================
+
+// Глобальный border-box, обязателен!
+* {
+	box-sizing: border-box;
+}
 
 html,
 body {
 	height: 100%;
-	margin: 0;
-	padding: 0;
 }
 
 body {
-	background: #475893;
-	background-image: linear-gradient(135deg, #4C478A 0%, #31A0BB 100%);
-	color: white;
+	min-width: 52em;
+	background: #f6f6f6;
+	color: $base-text-color;
 	font-size: $base-fz;
 	line-height: $base-lh;
 	font-family: $base-ff;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+// ==================================================
+// Global
+// ==================================================
+.wrapper {
+	max-width: 72em;
+	margin: 0 auto;
+	padding-left: ($base-spacing * 3);
+	padding-right: ($base-spacing * 3);
+}
+
 .header {
-	background: rgba(0,0,0,0.3);
-	height: 119px;
-	text-align: center;
-	font-size: 2.5em;
-	letter-spacing: 0.014em;
+	@extend .grid,
+				.grid--center;
+	position: relative;
+	background-color: #0a032a;
+	color: $white;
+	height: 56px;
 }
 
-.slider {
-
-}
-
-.events {
+.logo {
+	@extend .grid-cell;
 	
+	text-align: center;
+	font-size: em(28px);
+	line-height: em(28px);
+	font-weight: 600;
+	letter-spacing: 2.4px;
 }
+
+
+// ==================================================
+// Hero unit
+// ==================================================
+.hero {
+	position: relative;
+	color: $white;
+	max-height: 760px;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		display: block;
+	}
+}
+
+.hero__info {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate(-10%, -50%);
+}
+
+.hero__name {
+	// font-size: em(24px);
+	// padding-bottom: 6px;
+
+	// На болших экранах:
+	font-size: em(65px);
+	padding-bottom: 32px;
+}
+
+.hero__date-place {
+	// На болших экранах:
+	margin-bottom: ($base-spacing * 2);
+}
+
+.hero__btn {
+	// На болших экранах:
+	@extend .btn--md;
+}
+
+// ==================================================
+// Events block
+// ==================================================
+.events {
+	margin-top: ($base-spacing * 2);
+
+	img {
+		width: 100%;
+		display: block;
+	}
+}
+
+.event {
+	margin-bottom: $base-spacing;
+}
+
+.event__container {
+	@extend 	.cf;
+	
+	background-color: $white;
+	padding: 12px 12px 24px 12px;
+	text-align: center;
+}
+
+.event__name {
+	font-size: em(21px);
+	line-height: em(28px);
+	font-weight: 600;
+	padding-bottom: 2px;
+}
+
+.event__date-place {
+	font-size: $micro-fz;
+	padding-bottom: $base-spacing;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+// ==================================================
+// Forms styles
+// ==================================================
+
+// Global remove outline
+input,
+button {
+	outline: none;
+}
+
+.input-text {
+	background: none;
+	border: $base-border;
+	font-size: $milli-fz;
+	padding: 10px 13px 13px 13px;
+	transition: $base-transition;
+	width: 100%;
+
+	&:active,
+	&:hover,
+	&:focus {
+		border-color: white;
+	}
+}
+
+.input-text--white {
+	&::-webkit-input-placeholder {
+		color: white;
+	}
+}
+

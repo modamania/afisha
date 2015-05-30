@@ -1,0 +1,20 @@
+// Размеры шрифтов
+
+// настройка шрифтов
+$base-fz: 			1em;
+// $base-lh: 		($base-fz * 1.4);
+$base-lh: 			1.250em;
+$small-lh: 			20px;
+
+// шрифты
+$header-ff: 		"Open Sans", "Helvetica Neue", sans-serif;
+$base-ff: 			"Open Sans", "Helvetica Neue", sans-serif;
+$alt-ff: 			"Helvetica Neue", Arial, sans-serif;
+
+// TODO: Посчитать по золотому или по минорной ноте
+$milli-fz: 		em(15px);
+$micro-fz: 		em(12px);
+
+$h1-fz: 			em(68px);
+$h2-fz: 			em(57px);
+

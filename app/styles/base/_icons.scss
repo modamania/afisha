@@ -1,0 +1,17 @@
+.icon-burger {
+	&:after {
+		position: absolute;
+		content: url(/images/i-burger.svg);
+		top: 14px;
+		left: 15px;
+	}
+}
+
+.icon-search {
+	&:after {
+		position: absolute;
+		content: url(/images/i-search.svg);
+		top: 12px;
+		right: 13px;
+	}
+}

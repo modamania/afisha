@@ -1,0 +1,77 @@
+.btn {
+		border: 1px solid transparent;
+		border-radius: 3px;
+		transition: $base-transition;
+		outline: none; 
+		white-space: nowrap;
+		vertical-align: middle;
+}
+
+.btn--icon {
+	position: relative;
+	padding: 12px 22px 12px 55px;
+}
+
+.btn--simple {
+	background: none;
+}
+
+.btn--white {
+	color: $white;
+	border: $base-border;
+
+	&:hover {
+		background-color: $white;
+		color: $black;
+	}
+}
+
+.btn--pink {
+	color: $brand-color;
+	border: 1px solid $brand-color;
+	
+	&:hover {
+		color: $white;
+		background-color: $brand-color;
+	}
+}
+
+// Btn sizes
+.btn--sm {
+	font-size: 13px;
+	padding: 6px 11px;
+}
+
+.btn--md {
+	padding: 10px 16px;
+}
+
+.btn--lg {
+
+}
+
+// TODO: Отображение левого-правого бордера 2px => 1px
+.btn-group .btn {
+	display: inline-block;
+	position: relative;
+	float: left;
+	margin-left: 0;
+	border-radius: 0;
+
+	&:first-of-type {
+		border-bottom-left-radius: $base-radius;
+		border-top-left-radius: $base-radius;
+
+	}
+
+	&:last-of-type {
+		border-top-right-radius: $base-radius;
+		border-bottom-right-radius: $base-radius;
+	}
+}
+
+
+
+
+
+
