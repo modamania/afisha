@@ -68,8 +68,9 @@ body {
 }
 
 body {
-	min-width: 52em;
-	background: #f6f6f6;
+	position: relative;
+	min-width: 60em;
+	background-color: #EFEFEF;
 	color: $base-text-color;
 	font-size: $base-fz;
 	line-height: $base-lh;
@@ -91,29 +92,36 @@ ul {
 // Global
 // ==================================================
 .wrapper {
-	max-width: 72em;
+	@extend .cf;
+
+	max-width: 60em;
 	margin: 0 auto;
-	padding-left: ($base-spacing * 3);
-	padding-right: ($base-spacing * 3);
+	padding-left: ($base-spacing * 2);
+	padding-right: ($base-spacing * 2);
 }
 
 .header {
-	@extend .grid,
-				.grid--center;
-	position: relative;
-	background-color: #0a032a;
-	color: $white;
-	height: 56px;
+	// @extend .grid,
+	// 			.grid--center;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: ($base-spacing * 4);
+	z-index: 1;
 }
 
 .logo {
 	@extend .grid-cell;
 	
 	text-align: center;
-	font-size: em(28px);
-	line-height: em(28px);
+	font-size: em(24px);
 	font-weight: 600;
-	letter-spacing: 2.4px;
+	letter-spacing: 2px;
+	color: $white;
+	font-family: "Avenir Next";
+	font-weight: 700;
 }
 
 
@@ -121,31 +129,35 @@ ul {
 // Hero unit
 // ==================================================
 .hero {
-	position: relative;
+	
 	color: $white;
-	max-height: 760px;
+	height: 624px;
 	overflow: hidden;
 
-	img {
-		width: 100%;
-		display: block;
-	}
+	background-size: cover;
+	background-position: center;
+
+	font-weight: 100;
+}
+
+.hero-wrapper {
+	@extend .wrapper;
+
+	display: flex;
+	align-items: center;
+	height: 100%;
 }
 
 .hero__info {
-	position: absolute;
-	top: 50%;
-	left: 10%;
-	transform: translate(-10%, -50%);
+	flex: 0 0 auto;
+	// align-self: center;
 }
 
 .hero__name {
-	// font-size: em(24px);
-	// padding-bottom: 6px;
-
 	// На болших экранах:
-	font-size: em(65px);
-	padding-bottom: 32px;
+	font-size: em(48px);
+	padding-bottom: 24px;
+
 }
 
 .hero__date-place {
@@ -162,16 +174,21 @@ ul {
 // Events block
 // ==================================================
 .events {
+	@extend 	.grid,
+				.grid--gutters,
+				.grid--1of3;
+	
 	margin-top: ($base-spacing * 2);
-
+	margin-bottom: ($base-spacing * 3);;
+	
 	img {
-		width: 100%;
+		max-width: 100%;
 		display: block;
 	}
 }
 
 .event {
-	margin-bottom: $base-spacing;
+	@extend .grid-cell;
 }
 
 .event__container {
@@ -191,9 +208,10 @@ ul {
 
 .event__date-place {
 	font-size: $micro-fz;
-	padding-bottom: $base-spacing;
+	padding-bottom: $base-spacing + 4px;
 }
 
+@import 'layout/event-page';
 
 
 

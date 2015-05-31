@@ -1,37 +1,27 @@
-<section class="hero">
-	<a href="#"><img class="event__image" src="images/bilan.jpg"></a>
-	<div class="hero__info">
-		<div class="hero__name">Дима Билайн</div>
-		<div class="hero__date-place">15 сентября 2015 | СДК «Фетисов Арена»</div>
-		<button class="btn btn--simple btn--white hero__btn">Купить билеты</button>
+<section class="hero" style="background-image: url(../images/bilan.jpg);">
+	<div class="hero-wrapper">
+		{{!-- <a href="#"><img class="event__image" src="images/bilan.jpg"></a> --}}
+		<div class="hero__info">
+			<div class="hero__name">Дима Билан</div>
+			<div class="hero__date-place">15 сентября 2015 | Фетисов Арена</div>
+			<button class="btn btn--simple btn--white hero__btn">Купить билеты</button>
+		</div>
 	</div>
 </section>
 
 <div class="wrapper">
-	<ul class="events grid grid--gutters grid--1of3">
-		<li class="event grid-cell">
-			<a href="#"><img class="event__image" src="http://lorempixel.com/800/500/people"></a>
-			<div class="event__container">
-				<div class="event__name">Рок-группа «Алиса»</div>
-				<div class="event__date-place">15 сентября 2015 | СДК «Фетисов Арена»</div>
-				<button class="btn btn--simple btn--pink btn--sm">Купить билеты</button>
-			</div>
-		</li>
-		<li class="event grid-cell">
-			<a href="#"><img class="event__image" src="http://lorempixel.com/800/500/people"></a>
-			<div class="event__container">
-				<div class="event__name">Рок-группа «Алиса»</div>
-				<div class="event__date-place">15 сентября 2015 | СДК «Фетисов Арена»</div>
-				<button class="btn btn--simple btn--pink btn--sm">Купить билеты</button>
-			</div>
-		</li>
-		<li class="event grid-cell">
-			<a href="#"><img class="event__image" src="http://lorempixel.com/800/500/people"></a>
-			<div class="event__container">
-				<div class="event__name">Рок-группа «Алиса»</div>
-				<div class="event__date-place">15 сентября 2015 | СДК «Фетисов Арена»</div>
-				<button class="btn btn--simple btn--pink btn--sm">Купить билеты</button>
-			</div>
-		</li>
+	<ul class="events">
+		{{#each model as |event|}}
+			<li class="event">
+				{{#link-to 'event' event.id}}
+					<a href="#"><img class="event__image" src={{event.cover}}></a>
+				{{/link-to}}
+				<div class="event__container">
+					<div class="event__name">{{event.title}}</div>
+					<div class="event__date-place">{{event.date}} | {{event.place}}</div>
+					{{link-to 'Купить билеты' 'event' event class="btn btn--simple btn--pink btn--sm"}}
+				</div>
+			</li>
+		{{/each}}
 	</ul>
 </div>

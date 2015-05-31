@@ -1,0 +1,52 @@
+.event-page {
+	@extend .grid;
+
+	margin-top: $base-spacing;
+	margin-top: ($base-spacing * 2);
+}
+
+.event-page__cover {
+	width: 250px;
+	
+	img {
+		display: block;
+		max-width: 100%;
+	}
+}
+
+.event-page__content {
+	flex: 1;
+	padding-left: ($base-spacing * 4);
+}
+
+.event__title {
+	font-size: em(41px);
+	font-weight: normal;
+	line-height: em(48px);
+	margin-top: 0;
+}
+
+.event__description {
+	border-bottom: 1px solid $black;
+	padding-bottom: ($base-spacing * 2);
+	margin-bottom: ($base-spacing * 2);
+	line-height: em(24px);
+	font-family: $alt-ff;
+}
+
+.comments {
+	padding-top: ($base-spacing * 2);
+}
+
+.social-buttons {
+	width: 96px;
+
+	button {
+		height: 48px;
+		width: 48px;
+		display: block;
+		margin: 0 auto $base-spacing auto;
+		padding: 12px;
+		border-radius: 100px;
+	}
+}
