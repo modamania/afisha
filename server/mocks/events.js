@@ -8,7 +8,7 @@ module.exports = function(app) {
       title: 'Back Street Boys',
       cover: 'http://lorempixel.com/800/800/people',
       date: '12 июня 2015',
-      place: 'СДК «Фетисов Арена»',
+      place: 'Фетисов Арена',
       description: 'Fixie tote bag ethnic keytar. Neutra vinyl American Apparel kale chips tofu art party, cardigan raw denim quinoa. Cray paleo tattooed, Truffaut skateboard street art PBR jean shorts Shoreditch farm-to-table Austin lo-fi Odd Future occupy. Chia semiotics skateboard, Schlitz messenger bag master cleanse High Life occupy vegan polaroid tote bag leggings. Single-origin coffee mumblecore deep v salvia mlkshk. Organic photo booth cray tofu, vegan fixie bitters sriracha. Blog Austin Wes Anderson, deep v pour-over trust fund vinyl mlkshk +1.',
       isHero: false
     },
@@ -17,7 +17,7 @@ module.exports = function(app) {
       title: 'Уматурман',
       cover: 'http://lorempixel.com/800/800/people',
       date: '26 июня 2015',
-      place: 'СДК «Фетисов Арена»',
+      place: 'Фетисов Арена',
       description: 'Fixie tote bag ethnic keytar. Neutra vinyl American Apparel kale chips tofu art party, cardigan raw denim quinoa. Cray paleo tattooed, Truffaut skateboard street art PBR jean shorts Shoreditch farm-to-table Austin lo-fi Odd Future occupy. Chia semiotics skateboard, Schlitz messenger bag master cleanse High Life occupy vegan polaroid tote bag leggings. Single-origin coffee mumblecore deep v salvia mlkshk. Organic photo booth cray tofu, vegan fixie bitters sriracha. Blog Austin Wes Anderson, deep v pour-over trust fund vinyl mlkshk +1.',
       isHero: false
     },
@@ -26,7 +26,7 @@ module.exports = function(app) {
       title: 'Группа Ленинград',
       cover: 'http://lorempixel.com/800/800/people',
       date: '16 июня 2015',
-      place: 'СДК «Фетисов Арена»',
+      place: 'Фетисов Арена',
       description: 'Fixie tote bag ethnic keytar. Neutra vinyl American Apparel kale chips tofu art party, cardigan raw denim quinoa. Cray paleo tattooed, Truffaut skateboard street art PBR jean shorts Shoreditch farm-to-table Austin lo-fi Odd Future occupy. Chia semiotics skateboard, Schlitz messenger bag master cleanse High Life occupy vegan polaroid tote bag leggings. Single-origin coffee mumblecore deep v salvia mlkshk. Organic photo booth cray tofu, vegan fixie bitters sriracha. Blog Austin Wes Anderson, deep v pour-over trust fund vinyl mlkshk +1.',
       isHero: false
     },
@@ -35,7 +35,7 @@ module.exports = function(app) {
       title: 'Группа Ленинград',
       cover: 'http://lorempixel.com/800/800/people',
       date: '16 июня 2015',
-      place: 'СДК «Фетисов Арена»',
+      place: 'Фетисов Арена',
       description: 'Fixie tote bag ethnic keytar. Neutra vinyl American Apparel kale chips tofu art party, cardigan raw denim quinoa. Cray paleo tattooed, Truffaut skateboard street art PBR jean shorts Shoreditch farm-to-table Austin lo-fi Odd Future occupy. Chia semiotics skateboard, Schlitz messenger bag master cleanse High Life occupy vegan polaroid tote bag leggings. Single-origin coffee mumblecore deep v salvia mlkshk. Organic photo booth cray tofu, vegan fixie bitters sriracha. Blog Austin Wes Anderson, deep v pour-over trust fund vinyl mlkshk +1.',
       isHero: false
     },
@@ -44,7 +44,7 @@ module.exports = function(app) {
       title: 'Группа Ленинград',
       cover: 'http://lorempixel.com/800/800/people',
       date: '16 июня 2015',
-      place: 'СДК «Фетисов Арена»',
+      place: 'Фетисов Арена',
       description: 'Fixie tote bag ethnic keytar. Neutra vinyl American Apparel kale chips tofu art party, cardigan raw denim quinoa. Cray paleo tattooed, Truffaut skateboard street art PBR jean shorts Shoreditch farm-to-table Austin lo-fi Odd Future occupy. Chia semiotics skateboard, Schlitz messenger bag master cleanse High Life occupy vegan polaroid tote bag leggings. Single-origin coffee mumblecore deep v salvia mlkshk. Organic photo booth cray tofu, vegan fixie bitters sriracha. Blog Austin Wes Anderson, deep v pour-over trust fund vinyl mlkshk +1.',
       isHero: false
     }

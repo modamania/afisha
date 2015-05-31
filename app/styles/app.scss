@@ -134,6 +134,7 @@ ul {
 	height: 624px;
 	overflow: hidden;
 
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 
@@ -202,13 +203,13 @@ ul {
 .event__name {
 	font-size: em(21px);
 	line-height: em(28px);
-	font-weight: 600;
+	font-weight: 500;
 	padding-bottom: 2px;
 }
 
 .event__date-place {
 	font-size: $micro-fz;
-	padding-bottom: $base-spacing + 4px;
+	padding-bottom: $base-spacing * 2;
 }
 
 @import 'layout/event-page';
