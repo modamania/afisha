@@ -26,6 +26,16 @@
 	}
 }
 
+.btn--black {
+	color: $black;
+	border: 1px solid rgba($black, 0.5);
+
+	&:hover {
+		background-color: $black;
+		color: $white;
+	}
+}
+
 .btn--pink {
 	color: $brand-color;
 	border: 1px solid $brand-color;

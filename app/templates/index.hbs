@@ -10,16 +10,22 @@
 </section>
 
 <div class="wrapper">
-	<ul class="events">
+	<ul class="events__list">
 		{{#each model as |event|}}
-			<li class="event">
-				{{#link-to 'event' event.id}}
-					<a href="#"><img class="event__image" src={{event.cover}}></a>
-				{{/link-to}}
-				<div class="event__container">
-					<div class="event__name">{{event.title}}</div>
-					<div class="event__date-place">{{event.date}} | {{event.place}}</div>
-					{{link-to 'Купить билеты' 'event' event class="btn btn--simple btn--pink btn--md"}}
+			<li class="event__item">
+				<div class="paper">
+					{{#link-to 'event' event.id}}
+						<a href="#"><img class="event__image" src={{event.cover}}></a>
+					{{/link-to}}
+					<div class="item__about">
+						{{#link-to 'event' event.id}}
+							<div class="item__name">{{event.title}}</div>
+						{{/link-to}}
+						<div class="item__date-place">{{event.date}} | {{event.place}}</div>
+						<div class="buy-tickets">
+							{{link-to 'Купить билеты' 'event' event class="btn btn--simple btn--pink btn--md"}}
+						</div>
+					</div>
 				</div>
 			</li>
 		{{/each}}

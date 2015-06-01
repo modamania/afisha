@@ -1,18 +1,31 @@
-<div class="wrapper">
-	<section class="event-page">
-		<div class="event-page__cover">
-			<img src={{model.cover}}>
+<section class="event">
+	<div class="event__cover" style="background-image: url({{model.cover}})"></div>
+	<div class="wrapper">
+		<div class="event__info paper">
+			<div class="event__content">
+				<h1 class="event__title">{{model.title}}</h1>
+				<p class="event__desctiption">{{model.description}}</p>
+
+				<div class="event__const">
+					<span>{{model.date}}</span>	
+					<span>{{model.place}}</span>	
+					<span>{{model.price}}</span>	
+				</div>
+
+				<div class="event__buy">
+					<button class="btn btn--simple btn--pink btn--md">Купить билеты</button>
+				</div>
+
+			</div>
+			<div class="event__share">
+				<div class="event__share-buttons">
+					<a href="#" class="btn btn--simple btn--black btn--md">tw</a>
+					<a href="#" class="btn btn--simple btn--black btn--md">fb</a>
+					<a href="#" class="btn btn--simple btn--black btn--md">vk</a>
+				</div>
+				<span class="event__share-text">Рассказать&nbsp;друзьям</span>
+			</div>
 		</div>
-		<div class="event-page__content">
-			<h1 class="event__title">{{model.title}}</h1>
-			<p class="event__description">{{model.description}}</p>
-			<section class="comments">
-		 		Тут будет дискус с комментариями
-			</section>
-		</div>
-{{!-- 		<div class="social-buttons">
-			<button class="btn btn--simple btn--pink btn--social twitter">t</button>
-			<button class="btn btn--simple btn--pink btn--social facebook">f</button>
-		</div> --}}
-	</section>
-</div>
+	</div>	
+</section>
+

@@ -5,6 +5,7 @@ export default DS.Model.extend({
   	title: attr('string'),
 	date: attr('string'),
 	place: attr('string'),
+	price: attr('string'),
 	description: attr('string'),
 	cover: attr('string'),
 	isHero: attr('boolean')

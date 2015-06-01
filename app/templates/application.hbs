@@ -1,13 +1,13 @@
-<header class="header">
-	<div class="wrapper">
-		{{link-to 'АФИША' 'index' class="logo"}}
-	</div>
+<header class="nav-bar">
+	{{link-to 'АФИША' 'index' class="logo"}}
+	<nav class="nav-bar__nav">
+		<a href="#">Контакты</a>
+		<a href="#">Как купить билеты?</a>
+	</nav>
 </header>
 	
 {{outlet}}
 
-{{!-- <section class="footer">
-	<div class="wrapper">
-		<p>Подвальная часть сайта</p>
-	</div>
-</section> --}}
+<section class="footer">
+	<p class="copyright">Афиша Владивостока. 2015. Все права защищены.</p>
+</section>
