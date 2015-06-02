@@ -1,0 +1,11 @@
+.static {
+
+	.wrapper {
+		margin-top: (72px * 1.5);
+		margin-bottom: (72px * 2);
+	}
+}
+
+.static__content {
+	padding: ($base-spacing * 3) ($base-spacing * 6) ($base-spacing * 4) ($base-spacing * 3);
+}

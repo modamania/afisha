@@ -186,7 +186,7 @@ ul {
 
 .hero__name {
 	// На болших экранах:
-	font-size: em(48px);
+	font-size: em(64px);
 	padding-bottom: 24px;
 	font-family: "GothamProLight";
 
@@ -211,7 +211,7 @@ ul {
 				.grid--1of3;
 	
 	margin-top: ($base-spacing * 2);
-	margin-bottom: ($base-spacing * 3);;
+	margin-bottom: ($base-spacing * 6);;
 	
 	img {
 		max-width: 100%;
@@ -262,6 +262,8 @@ ul {
 .copyright {
 	@extend .grid-cell;
 }
+
+@import 'layout/static';
 
 
 

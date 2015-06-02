@@ -15,3 +15,59 @@
 		right: 13px;
 	}
 }
+
+.icon {
+	transition: background-image 0.2s ease-in-out;
+}
+
+.icon--56 {
+	width: 56px;
+	height: 56px;
+}
+
+.icon--48 {
+	width: 48px;
+	height: 48px;	
+}
+
+.icon--twitter {
+	background-image: url(/icons/twitter.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	&:hover {
+		background-image: url(/icons/twitter--bw.svg);
+	}
+}
+
+.icon--facebook {
+	background-image: url(/icons/facebook.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	&:hover {
+		background-image: url(/icons/facebook--bw.svg);
+	}
+}
+
+
+// Static
+.icon--calendar {
+	background-image: url(/icons/calendar.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.icon--location {
+	background-image: url(/icons/location.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.icon--ruble {
+	background-image: url(/icons/ruble.svg);
+	background-repeat: no-repeat;
+	background-position: center center;	
+}
+
+

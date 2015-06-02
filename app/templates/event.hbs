@@ -4,24 +4,21 @@
 		<div class="event__info paper">
 			<div class="event__content">
 				<h1 class="event__title">{{model.title}}</h1>
-				<p class="event__desctiption">{{model.description}}</p>
-
-				<div class="event__const">
-					<span>{{model.date}}</span>	
-					<span>{{model.place}}</span>	
-					<span>{{model.price}}</span>	
+				<p class="event__review">{{model.review}}</p>
+				<div class="event__details">
+					<span class="event__date icon icon--calendar">{{model.date}}</span>	
+					<span class="event__place icon icon--location">{{model.place}}</span>	
+					<span class="event__price icon icon--ruble">{{model.price}}</span>
 				</div>
-
 				<div class="event__buy">
-					<button class="btn btn--simple btn--pink btn--md">Купить билеты</button>
+					<button class="btn btn--simple btn--pink btn--md">Купить&nbsp;билеты</button> 
+					<span class="event__buy-help">Консультации при покупке билетов по тел.:&nbsp;8&nbsp;423&nbsp;255-55-55</span>
 				</div>
-
 			</div>
 			<div class="event__share">
 				<div class="event__share-buttons">
-					<a href="#" class="btn btn--simple btn--black btn--md">tw</a>
-					<a href="#" class="btn btn--simple btn--black btn--md">fb</a>
-					<a href="#" class="btn btn--simple btn--black btn--md">vk</a>
+					<a href="#" class="icon icon--56 icon--twitter"></a>
+					<a href="#" class="icon icon--56 icon--facebook"></a>
 				</div>
 				<span class="event__share-text">Рассказать&nbsp;друзьям</span>
 			</div>

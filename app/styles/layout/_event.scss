@@ -1,5 +1,5 @@
 .event {
-	padding-top: 56px;
+	padding-top: 56px; //???
 	position: relative;
 
 	.wrapper {
@@ -48,6 +48,10 @@
 	font-size: em(48px);
 }
 
+.event__review {
+	padding-bottom: 24px;
+}
+
 .event__share-buttons {
 	width: 56px;
 	margin: 0 auto;
@@ -74,7 +78,28 @@
 	color: rgba($black, 0.5)
 }
 
-.event__const {
-	margin-bottom: 48px;
+.event__details {
+	@extend .cf;
+
+	margin-bottom: (24px * 3);
 }
 
+.event__date,
+.event__place, 
+.event__price {
+	display: block;
+	font-family: "GothamProRegular";
+	font-size: em(17px);
+	margin-right: 48px;
+	padding-left: 36px;
+	float: left;
+
+	background-position: -12px center;
+	height: 48px;
+	line-height: 48px;
+}
+
+.event__buy-help {
+	font-size: $micro-fz;
+	margin-left: 24px;
+}
